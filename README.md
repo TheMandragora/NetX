@@ -5,3 +5,18 @@ It aslo allows to kill a simple connection device/gateway or kill all connection
 
 My programm can have some bugs and imperfections, that is why I publish the source code if you want improve it or add new features.
 If you have any questions, contact me.
+
+# Installation and dependancies
+This programm requires 2 dependancies : libpcap and libcrafter, you can install libpcap with this command :
+
+$ sudo apt-get install libpcap-dev
+
+For install libcrafter, this's a bit more complicated, but still easy. Just follow these instructions :
+
+$ sudo apt-get install autoconf libtool make (check if these tools are installed on your system)
+$ git clone https://github.com/pellegre/libcrafter
+$ cd libcrafter/libcrafter
+$ ./autogen.sh
+$ make
+$ sudo make install
+$ sudo ldconfig
