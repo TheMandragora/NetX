@@ -20,3 +20,14 @@ For install libcrafter, this's a bit more complicated, but still easy. Just foll
 - make
 - sudo make install
 - sudo ldconfig
+
+# How to use and compile sources
+After installing dependancies, the executable file is able to be launched with this command :
+
+- sudo ./NetX your_network_interface
+
+You must replace the "your_network_interface" argument by the network interface that your computer use to connect to your network (the most common network interfaces are "wlan0" if you use the WiFi and "eth0" if you use the Ethernet wire. Type "ifconfig" in a terminal if you don't know), you don't have to write quotes between the argument. If you don't write any argument, the default argument that is given to the programm is "wlan0".
+
+If you want to compile sources, don't forget to link with these 3 arguments, like this :
+
+- g++ main.cpp -o name_of_executable -lpcap -lpthread -lcrafter
