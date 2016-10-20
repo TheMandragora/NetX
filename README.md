@@ -22,6 +22,7 @@ For install libcrafter, this's a bit more complicated, but still easy. Just foll
 - sudo ldconfig
 
 # How to use and compile sources
+Note : This programm can be compiled only on Linux systems because the libcrafter's author build his library only on Linux, sorry for Windows and Mac users.
 After installing dependancies, the executable file is able to be launched with this command :
 
 - sudo ./NetX your_network_interface
